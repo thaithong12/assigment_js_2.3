@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    
+    <div class="container">
+ 
+        
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8 bg-danger">
+                <h2 class="title"> <label for="exampleInputEmail1">Danh sach nhung viec can lam trong nam</label></h2> 
+                <form onsubmit="formSubmit(event)">
+                    <div class="form-group">
+                      <input type="text" class="form-control" id="txt-title" aria-describedby="emailHelp" placeholder="Title">
+                      <small id="error-input" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-form">Them</button>
+                </form>
+            </div>
+               
+            
+        </div>
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8 p-0">
+                <table class="col-md-12">
+                    <thead>
+                        <tr>
+                            <th class="check"></th>
+                            <th class="title_head"></th>
+                            <th class="delete"></th>
+                        </tr>
+                    </thead>
+                    <tbody id="data-show">
+                        <tr class="bg-secondary data d-none" id="no_data">
+                            <td><span class="text-left d-none"><i class="fa fa-check" aria-hidden="true"></i></span></td>
+                            <td> <div class="p-3 pt-0 ">.bg-light <del></del></div></td>
+                            <td><span class="text-left d-none"><i class="fa fa-times" aria-hidden="true"></i></span></td>
+                        </tr>
+                    </tbody>
+                    
+                </table>
+               
+                
+            </div>
+        </div>
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" ></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
